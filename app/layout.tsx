@@ -10,9 +10,9 @@ const inter = Inter({
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.dev",
+  title: "Isolated Tech - Digital Agency",
+  description: "Isolated Tech - Leading digital agency specializing in innovative web solutions, design, and technology services",
+  generator: "Next.js",
 }
 
 export default function RootLayout({
