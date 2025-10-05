@@ -33,7 +33,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold text-white">ISO TECH</span>
+            <a href="/" className="text-xl font-bold text-white hover:text-white/90 transition-colors duration-300">ISO TECH</a>
           </div>
 
           {/* Desktop Navigation */}
