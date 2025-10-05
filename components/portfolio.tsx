@@ -84,12 +84,12 @@ export function Portfolio() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           <div className="flex items-center justify-center lg:justify-start">
-            <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
               PORTFOLIO
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
             {displayedProjects.map((project, index) => (
               <a
                 key={project.slug}
@@ -99,7 +99,7 @@ export function Portfolio() {
                 className="group block"
               >
                 <div className="space-y-4">
-                  <div className="relative h-80 rounded-lg overflow-hidden">
+                  <div className="relative h-64 sm:h-80 rounded-lg overflow-hidden">
                     <Image
                       src={project.image}
                       alt={project.title}
@@ -107,7 +107,7 @@ export function Portfolio() {
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>
-                  <h3 className="text-white text-3xl font-normal">
+                  <h3 className="text-white text-2xl sm:text-3xl font-normal">
                     {project.title}
                   </h3>
                 </div>

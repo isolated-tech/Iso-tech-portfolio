@@ -17,35 +17,35 @@ export function Team() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
           <div className="flex items-start justify-center lg:justify-start">
             <div>
-              <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 {currentView === 0 ? "THE TEAM" : currentView === 1 ? "CODY BONTECOU" : "DANY BONTECOU"}
               </h2>
               {currentView === 0 && (
                 <>
-                  <p className="text-white uppercase mt-4" style={{ fontSize: '18px' }}>
+                  <p className="text-white uppercase mt-4 text-sm sm:text-base" style={{ fontSize: 'inherit' }}>
                     CODY AND DANIELA BONTECOU
                   </p>
-                  <p className="text-white/80 mt-4 text-lg leading-relaxed">
+                  <p className="text-white/80 mt-4 text-sm sm:text-base lg:text-lg leading-relaxed">
                     Cody and Daniela Bontecou lead the creative and technical vision at Isolated Tech. As Lead Graphic Designer and Lead Software Developer, they combine design and innovation to deliver exceptional digital experiences. Their teamwork blends creativity with cutting-edge technology to bring every project to life.
                   </p>
                 </>
               )}
               {currentView === 1 && (
                 <>
-                  <p className="text-white uppercase mt-4" style={{ fontSize: '18px' }}>
+                  <p className="text-white uppercase mt-4 text-sm sm:text-base" style={{ fontSize: 'inherit' }}>
                     FOUNDER & CTO
                   </p>
-                  <p className="text-white/80 mt-4 text-lg leading-relaxed">
+                  <p className="text-white/80 mt-4 text-sm sm:text-base lg:text-lg leading-relaxed">
                     Cody Bontecou is the Lead Software Developer at Isolated Tech, specializing in creating innovative, high-quality solutions and guiding the development team with expertise and vision.
                   </p>
                 </>
               )}
               {currentView === 2 && (
                 <>
-                  <p className="text-white uppercase mt-4" style={{ fontSize: '18px' }}>
+                  <p className="text-white uppercase mt-4 text-sm sm:text-base" style={{ fontSize: 'inherit' }}>
                     HEAD OF GRAPHIC DESIGN
                   </p>
-                  <p className="text-white/80 mt-4 text-lg leading-relaxed">
+                  <p className="text-white/80 mt-4 text-sm sm:text-base lg:text-lg leading-relaxed">
                     Daniela Bontecou is the Lead Graphic Designer at Isolated Tech. She specializes in creating bold, modern, and visually engaging designs that connect with audiences. With a keen eye for detail and creativity, she transforms ideas into impactful visuals.
                   </p>
                 </>

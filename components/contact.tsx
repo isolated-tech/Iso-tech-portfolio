@@ -49,10 +49,10 @@ export function Contact() {
     <section id="contact" className="py-40" style={{ backgroundColor: '#131313' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-24 text-center">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight inline-flex items-center">
-            CONTACT US <ChevronDown className="ml-4" size={48} />
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-8 leading-tight inline-flex items-center">
+            CONTACT US <ChevronDown className="ml-2 sm:ml-4" size={32} />
           </h2>
-          <p className="text-xl text-white/70 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/70 leading-relaxed">
             We'd love to hear your ideas
           </p>
         </div>

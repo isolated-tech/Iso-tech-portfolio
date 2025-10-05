@@ -74,7 +74,7 @@ export function Navigation() {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)}>
+            <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)} className="text-white hover:bg-white/10">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
@@ -83,34 +83,34 @@ export function Navigation() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black border-t border-gray-800">
               <button
                 onClick={() => scrollToSection("our-model")}
-                className="text-foreground block px-3 py-2 text-base font-medium w-full text-left"
+                className="text-white/80 hover:text-white block px-3 py-2 text-base font-medium w-full text-left transition-colors duration-300"
               >
                 Pricing
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="text-foreground block px-3 py-2 text-base font-medium w-full text-left"
+                className="text-white/80 hover:text-white block px-3 py-2 text-base font-medium w-full text-left transition-colors duration-300"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection("portfolio")}
-                className="text-foreground block px-3 py-2 text-base font-medium w-full text-left"
+                className="text-white/80 hover:text-white block px-3 py-2 text-base font-medium w-full text-left transition-colors duration-300"
               >
                 Portfolio
               </button>
               <button
                 onClick={() => scrollToSection("team")}
-                className="text-foreground block px-3 py-2 text-base font-medium w-full text-left"
+                className="text-white/80 hover:text-white block px-3 py-2 text-base font-medium w-full text-left transition-colors duration-300"
               >
                 The Team
               </button>
               <Button
                 onClick={() => scrollToSection("contact")}
-                className="bg-primary text-primary-foreground hover:bg-primary/90 w-full mt-2"
+                className="bg-white text-black border-2 border-white hover:bg-black hover:text-white hover:border-white w-full mt-2 rounded-full transition-all duration-300"
               >
                 Contact
               </Button>

@@ -46,8 +46,8 @@ export function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-24">
           <div className="max-w-3xl">
-            <h2 className="text-5xl md:text-6xl font-extralight text-foreground mb-8 leading-tight">About ISO TECH</h2>
-            <p className="text-xl text-foreground/70 leading-relaxed">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extralight text-foreground mb-8 leading-tight">About ISO TECH</h2>
+            <p className="text-lg sm:text-xl text-foreground/70 leading-relaxed">
               We are a team of strategists, designers, and developers who believe great digital experiences drive
               business growth.
             </p>
@@ -58,7 +58,7 @@ export function About() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-24">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-5xl font-extralight text-foreground mb-3">{stat.number}</div>
+              <div className="text-3xl sm:text-4xl md:text-5xl font-extralight text-foreground mb-3">{stat.number}</div>
               <div className="text-sm text-foreground/60 uppercase tracking-wider font-medium">{stat.label}</div>
             </div>
           ))}
@@ -66,16 +66,16 @@ export function About() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h3 className="text-3xl font-light text-foreground mb-8">Our Approach</h3>
-            <p className="text-foreground/80 mb-4">
+            <h3 className="text-2xl sm:text-3xl font-light text-foreground mb-6 sm:mb-8">Our Approach</h3>
+            <p className="text-sm sm:text-base text-foreground/80 mb-4">
               Founded with a vision to bridge the gap between technology and creativity, ISO TECH has grown from a small
               startup to a recognized leader in digital innovation.
             </p>
-            <p className="text-foreground/80 mb-4">
+            <p className="text-sm sm:text-base text-foreground/80 mb-4">
               Our approach combines strategic thinking with creative execution, ensuring that every project we undertake
               not only meets but exceeds our clients' expectations.
             </p>
-            <p className="text-foreground/80">
+            <p className="text-sm sm:text-base text-foreground/80">
               We believe in the power of collaboration, continuous learning, and pushing the boundaries of what's
               possible in the digital realm.
             </p>
@@ -94,7 +94,7 @@ export function About() {
         </div>
 
         <div>
-          <h3 className="text-3xl font-light text-foreground mb-12 text-center">The Team</h3>
+          <h3 className="text-2xl sm:text-3xl font-light text-foreground mb-8 sm:mb-12 text-center">The Team</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {team.map((member, index) => (
               <Card

@@ -38,26 +38,26 @@ export function Services() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             <div className="flex items-center justify-center lg:justify-start">
-              <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
                 PRICING
               </h2>
             </div>
             <div className="space-y-8">
               <div>
-                <p className="text-5xl md:text-6xl font-bold text-white leading-tight">
+                <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
                   $200/month.
                 </p>
-                <p className="text-xl text-gray-400 mt-2">
+                <p className="text-lg sm:text-xl text-gray-400 mt-2">
                   That's it.
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-light text-white mb-6">What you get:</h3>
+                <h3 className="text-xl sm:text-2xl font-light text-white mb-6">What you get:</h3>
                 <div className="space-y-4">
                   {services.map((service, index) => (
                     <div key={index} className="flex items-start space-x-4">
                       <span className="text-white/70 mt-1">-</span>
-                      <p className="text-lg text-white/90">{service}</p>
+                      <p className="text-base sm:text-lg text-white/90">{service}</p>
                     </div>
                   ))}
                 </div>
@@ -71,15 +71,15 @@ export function Services() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             <div className="flex items-center justify-center lg:justify-start">
-              <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
                 SERVICES
               </h2>
             </div>
             <div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 sm:gap-x-12 gap-y-4 sm:gap-y-6">
                 {additionalServices.map((service, index) => (
                   <div key={index}>
-                    <h4 className="text-xl font-normal text-white">
+                    <h4 className="text-lg sm:text-xl font-normal text-white">
                       {String(index + 1).padStart(2, '0')}. {service.title}
                     </h4>
                   </div>
