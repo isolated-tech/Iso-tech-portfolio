@@ -15,7 +15,7 @@ const additionalServices = [
     capabilities: ["React & Next.js", "Full-stack Architecture", "API Development", "Performance Optimization"]
   },
   {
-    title: "Web Design",
+    title: "Social Media Design",
     description: "User-centered design solutions that create meaningful connections between your brand and your audience.",
     capabilities: ["UI/UX Strategy", "Design Systems", "Responsive Design", "User Research"]
   },
