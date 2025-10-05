@@ -18,10 +18,22 @@ export function Contact() {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
+
+    // Create mailto link with form data
+    const subject = encodeURIComponent(`New inquiry from ${formData.name}`)
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Company: ${formData.company}\n` +
+      `Service: ${formData.service}\n\n` +
+      `Message:\n${formData.message}`
+    )
+
+    // Open email client with pre-filled content
+    window.location.href = `mailto:hello@isolated.tech?subject=${subject}&body=${body}`
+
     // Reset form
     setFormData({ name: "", email: "", company: "", service: "", message: "" })
   }
