@@ -12,22 +12,22 @@ export function Footer() {
             <h4 className="mb-4" style={{ color: '#F9FAFB' }}>Socials</h4>
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               <li>
-                <a href="#" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
+                <a href="https://www.instagram.com/isolated.tech" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
                   INSTAGRAM
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
+                <a href="https://github.com/isolated-tech" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
                   GITHUB
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
+                <a href="https://www.linkedin.com/company/isolated-tech/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
                   LINKEDIN
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
+                <a href="https://x.com/isolatedtech" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
                   X
                 </a>
               </li>
@@ -37,15 +37,15 @@ export function Footer() {
           {/* Email */}
           <div className="text-right">
             <h4 className="mb-4" style={{ color: '#F9FAFB' }}>Email</h4>
-            <a href="mailto:info@isolated.tech" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
-              INFO@ISOLATED.TECH
+            <a href="mailto:hello@isolated.tech" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
+              HELLO@ISOLATED.TECH
             </a>
             
             <div style={{ marginTop: '100px', display: 'flex', gap: '30px', justifyContent: 'flex-end' }}>
-              <span style={{ color: '#F9FAFB' }}>SERVICES</span>
-              <span style={{ color: '#F9FAFB' }}>PORTFOLIO</span>
-              <span style={{ color: '#F9FAFB' }}>BLOG</span>
-              <span style={{ color: '#F9FAFB' }}>ABOUT</span>
+              <a href="#about" style={{ color: '#F9FAFB', textDecoration: 'none' }}>OUR MODEL</a>
+              <a href="#services" style={{ color: '#F9FAFB', textDecoration: 'none' }}>SERVICES</a>
+              <a href="#portfolio" style={{ color: '#F9FAFB', textDecoration: 'none' }}>WORK</a>
+              <a href="#team" style={{ color: '#F9FAFB', textDecoration: 'none' }}>THE TEAM</a>
             </div>
             
             <div style={{ marginTop: '20px' }}>
