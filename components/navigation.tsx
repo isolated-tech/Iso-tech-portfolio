@@ -27,45 +27,45 @@ export function Navigation() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white border-b border-gray-100" : "bg-transparent"
+        isScrolled ? "bg-black border-b border-gray-800" : "bg-black"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold text-foreground">ISO TECH</span>
+            <span className="text-xl font-bold text-white">ISO TECH</span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-12">
               <button
-                onClick={() => scrollToSection("home")}
-                className="text-foreground/80 hover:text-foreground px-0 py-2 text-sm font-medium transition-colors duration-300"
-              >
-                Home
-              </button>
-              <button
                 onClick={() => scrollToSection("services")}
-                className="text-foreground/80 hover:text-foreground px-0 py-2 text-sm font-medium transition-colors duration-300"
+                className="text-white/80 hover:text-white px-0 py-2 text-sm font-medium transition-colors duration-300"
               >
                 Services
               </button>
               <button
-                onClick={() => scrollToSection("portfolio")}
-                className="text-foreground/80 hover:text-foreground px-0 py-2 text-sm font-medium transition-colors duration-300"
+                onClick={() => scrollToSection("work")}
+                className="text-white/80 hover:text-white px-0 py-2 text-sm font-medium transition-colors duration-300"
               >
-                Portfolio
+                Work
+              </button>
+              <button
+                onClick={() => scrollToSection("blog")}
+                className="text-white/80 hover:text-white px-0 py-2 text-sm font-medium transition-colors duration-300"
+              >
+                Blog
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-foreground/80 hover:text-foreground px-0 py-2 text-sm font-medium transition-colors duration-300"
+                className="text-white/80 hover:text-white px-0 py-2 text-sm font-medium transition-colors duration-300"
               >
                 About
               </button>
               <Button
                 onClick={() => scrollToSection("contact")}
-                className="bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-2 text-sm font-medium transition-all duration-300"
+                className="bg-white text-black border-2 border-white hover:bg-black hover:text-white hover:border-white px-6 py-2 text-sm font-medium transition-all duration-300 rounded-full"
               >
                 Contact
               </Button>
@@ -85,22 +85,22 @@ export function Navigation() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
               <button
-                onClick={() => scrollToSection("home")}
-                className="text-foreground block px-3 py-2 text-base font-medium w-full text-left"
-              >
-                Home
-              </button>
-              <button
                 onClick={() => scrollToSection("services")}
                 className="text-foreground block px-3 py-2 text-base font-medium w-full text-left"
               >
                 Services
               </button>
               <button
-                onClick={() => scrollToSection("portfolio")}
+                onClick={() => scrollToSection("work")}
                 className="text-foreground block px-3 py-2 text-base font-medium w-full text-left"
               >
-                Portfolio
+                Work
+              </button>
+              <button
+                onClick={() => scrollToSection("blog")}
+                className="text-foreground block px-3 py-2 text-base font-medium w-full text-left"
+              >
+                Blog
               </button>
               <button
                 onClick={() => scrollToSection("about")}

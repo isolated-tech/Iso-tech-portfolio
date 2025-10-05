@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, Phone, MapPin, Send, Clock } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Clock, ChevronDown } from "lucide-react"
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -34,92 +34,24 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-40 bg-muted">
+    <section id="contact" className="py-40" style={{ backgroundColor: '#131313' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-24">
-          <div className="max-w-3xl">
-            <h2 className="text-5xl md:text-6xl font-extralight text-foreground mb-8 leading-tight">
-              Start a Conversation
-            </h2>
-            <p className="text-xl text-foreground/70 leading-relaxed">
-              Ready to explore how we can help elevate your digital presence? Let's discuss your project.
-            </p>
-          </div>
+        <div className="mb-24 text-center">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight inline-flex items-center">
+            CONTACT US <ChevronDown className="ml-4" size={48} />
+          </h2>
+          <p className="text-xl text-white/70 leading-relaxed">
+            We'd love to hear your ideas
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Contact Information */}
-          <div className="lg:col-span-1">
-            <div className="space-y-6">
-              <Card className="bg-white border-0 hover:shadow-sm transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-primary/5 rounded-lg flex items-center justify-center mx-auto mb-4">
-                      <Mail className="h-6 w-6 text-primary" />
-                    </div>
-                    <h3 className="font-medium text-foreground mb-1">Email</h3>
-                    <p className="text-foreground/70">hello@isotech.agency</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white border-0 hover:shadow-sm transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-primary/5 rounded-lg flex items-center justify-center mx-auto mb-4">
-                      <Phone className="h-6 w-6 text-primary" />
-                    </div>
-                    <h3 className="font-medium text-foreground mb-1">Phone</h3>
-                    <p className="text-foreground/70">+1 (555) 123-4567</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white border-0 hover:shadow-sm transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-primary/5 rounded-lg flex items-center justify-center mx-auto mb-4">
-                      <MapPin className="h-6 w-6 text-primary" />
-                    </div>
-                    <h3 className="font-medium text-foreground mb-1">Office</h3>
-                    <p className="text-foreground/70">
-                      123 Innovation Drive
-                      <br />
-                      Tech District, CA 94105
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white border-0 hover:shadow-sm transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-primary/5 rounded-lg flex items-center justify-center mx-auto mb-4">
-                      <Clock className="h-6 w-6 text-primary" />
-                    </div>
-                    <h3 className="font-medium text-foreground mb-1">Hours</h3>
-                    <p className="text-foreground/70">
-                      Mon - Fri: 9:00 AM - 6:00 PM
-                      <br />
-                      Sat: 10:00 AM - 4:00 PM
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
+        <div className="max-w-2xl mx-auto">
           {/* Contact Form */}
-          <div className="lg:col-span-2">
-            <Card className="bg-white border border-gray-100">
-              <CardHeader>
-                <CardTitle className="text-3xl font-light text-foreground mb-2">Get in Touch</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
+          <div>
+            <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                      <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
                         Name *
                       </label>
                       <Input
@@ -130,11 +62,11 @@ export function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         placeholder="Your name"
-                        className="border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary"
+                        className="bg-transparent border border-white text-white placeholder-white/50 focus:border-white focus:ring-1 focus:ring-white"
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                      <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                         Email *
                       </label>
                       <Input
@@ -145,50 +77,14 @@ export function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="your@email.com"
-                        className="border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary"
+                        className="bg-transparent border border-white text-white placeholder-white/50 focus:border-white focus:ring-1 focus:ring-white"
                       />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-                        Company
-                      </label>
-                      <Input
-                        id="company"
-                        name="company"
-                        type="text"
-                        value={formData.company}
-                        onChange={handleChange}
-                        placeholder="Your company name"
-                        className="border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="service" className="block text-sm font-medium text-foreground mb-2">
-                        Service Interest
-                      </label>
-                      <select
-                        id="service"
-                        name="service"
-                        value={formData.service}
-                        onChange={handleChange}
-                        className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
-                      >
-                        <option value="">Select a service</option>
-                        <option value="web-development">Web Development</option>
-                        <option value="web-design">Web Design</option>
-                        <option value="graphic-design">Graphic Design</option>
-                        <option value="product-photography">Product Photography</option>
-                        <option value="full-package">Full Package</option>
-                      </select>
                     </div>
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                      Message *
+                    <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
+                      Tell us about your project *
                     </label>
                     <Textarea
                       id="message"
@@ -198,21 +94,17 @@ export function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       placeholder="Tell us about your project..."
-                      className="border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary"
+                      className="bg-transparent border border-white text-white placeholder-white/50 focus:border-white focus:ring-1 focus:ring-white"
                     />
                   </div>
 
                   <Button
                     type="submit"
-                    size="lg"
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                    className="bg-white text-black border-2 border-white hover:bg-transparent hover:text-white hover:border-white rounded-full transition-all duration-300 px-8 py-2 text-sm"
                   >
                     Send Message
-                    <Send className="ml-2 h-5 w-5" />
                   </Button>
                 </form>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

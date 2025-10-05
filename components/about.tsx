@@ -58,7 +58,7 @@ export function About() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-24">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-5xl font-extralight text-primary mb-3">{stat.number}</div>
+              <div className="text-5xl font-extralight text-foreground mb-3">{stat.number}</div>
               <div className="text-sm text-foreground/60 uppercase tracking-wider font-medium">{stat.label}</div>
             </div>
           ))}
@@ -99,7 +99,7 @@ export function About() {
             {team.map((member, index) => (
               <Card
                 key={index}
-                className="bg-white text-center border border-gray-100 hover:border-primary/20 transition-colors duration-300"
+                className="bg-white text-center border border-primary/10 hover:border-primary/20 transition-colors duration-300"
               >
                 <CardContent className="p-6">
                   <div className="relative mb-4">
@@ -112,7 +112,7 @@ export function About() {
                     />
                   </div>
                   <h4 className="text-lg font-bold text-foreground mb-1">{member.name}</h4>
-                  <p className="text-primary font-medium mb-3">{member.role}</p>
+                  <p className="text-foreground font-medium mb-3">{member.role}</p>
                   <p className="text-sm text-foreground/70">{member.bio}</p>
                 </CardContent>
               </Card>

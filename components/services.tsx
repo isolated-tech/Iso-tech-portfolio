@@ -1,74 +1,89 @@
-import { Code, Palette, Camera, Monitor } from "lucide-react"
+import { Check } from "lucide-react"
 
 const services = [
+  "A website that actually looks good",
+  "Hosting (so it stays online) with your own domain",
+  "Payment stuff if you need it",
+  "Login systems for your customers",
+  "We'll update the design when you need changes"
+]
+
+const additionalServices = [
   {
-    icon: Code,
     title: "Web Development",
-    description:
-      "We build scalable, performant web applications using modern technologies and best practices that drive business results.",
-    capabilities: ["React & Next.js", "Full-stack Architecture", "API Development", "Performance Optimization"],
+    description: "We build scalable, performant web applications using modern technologies and best practices that drive business results.",
+    capabilities: ["React & Next.js", "Full-stack Architecture", "API Development", "Performance Optimization"]
   },
   {
-    icon: Monitor,
     title: "Web Design",
-    description:
-      "User-centered design solutions that create meaningful connections between your brand and your audience.",
-    capabilities: ["UI/UX Strategy", "Design Systems", "Responsive Design", "User Research"],
+    description: "User-centered design solutions that create meaningful connections between your brand and your audience.",
+    capabilities: ["UI/UX Strategy", "Design Systems", "Responsive Design", "User Research"]
   },
   {
-    icon: Palette,
     title: "Brand & Visual Identity",
-    description:
-      "Comprehensive visual identity systems that differentiate your brand and communicate your values effectively.",
-    capabilities: ["Brand Strategy", "Visual Identity", "Print & Digital", "Brand Guidelines"],
+    description: "Comprehensive visual identity systems that differentiate your brand and communicate your values effectively.",
+    capabilities: ["Brand Strategy", "Visual Identity", "Print & Digital", "Brand Guidelines"]
   },
   {
-    icon: Camera,
     title: "Visual Content",
     description: "Professional photography and visual content that showcases your products and tells your brand story.",
-    capabilities: ["Product Photography", "Brand Photography", "Content Strategy", "Post-Production"],
-  },
+    capabilities: ["Product Photography", "Brand Photography", "Content Strategy", "Post-Production"]
+  }
 ]
 
 export function Services() {
   return (
-    <section id="services" className="py-40 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-24">
-          <div className="max-w-3xl">
-            <h2 className="text-5xl md:text-6xl font-extralight text-foreground mb-8 leading-tight">
-              Our Capabilities
-            </h2>
-            <p className="text-xl text-foreground/70 leading-relaxed">
-              We partner with forward-thinking organizations to create digital experiences that drive growth and build
-              lasting relationships with their audiences.
-            </p>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-          {services.map((service, index) => (
-            <div key={index} className="group">
-              <div className="flex items-start space-x-6 mb-8">
-                <div className="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-500">
-                  <service.icon className="h-5 w-5 text-primary" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-light text-foreground mb-4">{service.title}</h3>
-                  <p className="text-foreground/70 leading-relaxed mb-6">{service.description}</p>
-                  <div className="space-y-2">
-                    {service.capabilities.map((capability, capIndex) => (
-                      <div key={capIndex} className="text-sm text-foreground/60 font-medium">
-                        {capability}
-                      </div>
-                    ))}
-                  </div>
+    <>
+      <section id="services" className="py-40" style={{ backgroundColor: '#131313' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+            <div className="flex items-center justify-center lg:justify-start">
+              <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+                OUR MODEL
+              </h2>
+            </div>
+            <div className="space-y-8">
+              <p className="text-lg text-white/90 leading-relaxed">
+                Look, we get it. You need a website that doesn't suck, but you're probably tired of agencies charging crazy prices upfront. So here's our deal: we'll build you a custom site for free. If you like it, it's $200/month. That's it.
+              </p>
+              <div>
+                <h3 className="text-2xl font-light text-white mb-6">What you get:</h3>
+                <div className="space-y-4">
+                  {services.map((service, index) => (
+                    <div key={index} className="flex items-start space-x-4">
+                      <span className="text-white/70 mt-1">-</span>
+                      <p className="text-lg text-white/90">{service}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
-          ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section className="py-40 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+            <div className="flex items-center justify-center lg:justify-start">
+              <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+                SERVICES
+              </h2>
+            </div>
+            <div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+                {additionalServices.map((service, index) => (
+                  <div key={index}>
+                    <h4 className="text-xl font-normal text-white">
+                      {String(index + 1).padStart(2, '0')}. {service.title}
+                    </h4>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

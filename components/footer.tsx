@@ -1,123 +1,57 @@
 "use client"
 
-import { Facebook, Twitter, Instagram, Linkedin, Github } from "lucide-react"
-import Image from "next/image"
+import { X } from "lucide-react"
 
 export function Footer() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-  }
-
   return (
-    <footer className="bg-primary text-white">
+    <footer className="bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="md:col-span-2">
-            <div className="flex items-center mb-8">
-              <Image
-                src="/images/iso-tech-logo.png"
-                alt="ISO TECH"
-                width={32}
-                height={32}
-                className="h-8 w-auto mr-4 filter brightness-0 invert"
-              />
-              <h3 className="text-2xl font-extralight">ISO TECH</h3>
-            </div>
-            <p className="text-white/60 mb-8 max-w-md text-lg leading-relaxed">
-              Crafting digital experiences that drive meaningful connections between brands and their audiences.
-            </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-white/60 transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-white/60 transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-white/60 transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-white/60 transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-white/60 transition-colors">
-                <Github className="h-5 w-5" />
-              </a>
-            </div>
-          </div>
-
-          {/* Quick Links */}
+        <div className="grid grid-cols-2">
+          {/* Socials */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
+            <h4 className="mb-4" style={{ color: '#F9FAFB' }}>Socials</h4>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               <li>
-                <button
-                  onClick={() => scrollToSection("home")}
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  Home
-                </button>
+                <a href="#" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
+                  INSTAGRAM
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("services")}
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  Services
-                </button>
+                <a href="#" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
+                  GITHUB
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("portfolio")}
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  Portfolio
-                </button>
+                <a href="#" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
+                  LINKEDIN
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("about")}
-                  className="text-white/60 hover:text-white transition-colors"
-                >
-                  About
-                </button>
+                <a href="#" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
+                  X
+                </a>
               </li>
             </ul>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-white/60 hover:text-white transition-colors">
-                  Web Development
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/60 hover:text-white transition-colors">
-                  Web Design
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/60 hover:text-white transition-colors">
-                  Graphic Design
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/60 hover:text-white transition-colors">
-                  Product Photography
-                </a>
-              </li>
-            </ul>
+          {/* Email */}
+          <div className="text-right">
+            <h4 className="mb-4" style={{ color: '#F9FAFB' }}>Email</h4>
+            <a href="mailto:info@isolated.tech" className="text-white/70 hover:text-white transition-colors font-bold uppercase" style={{ fontSize: '30px' }}>
+              INFO@ISOLATED.TECH
+            </a>
+            
+            <div style={{ marginTop: '100px', display: 'flex', gap: '30px', justifyContent: 'flex-end' }}>
+              <span style={{ color: '#F9FAFB' }}>SERVICES</span>
+              <span style={{ color: '#F9FAFB' }}>PORTFOLIO</span>
+              <span style={{ color: '#F9FAFB' }}>BLOG</span>
+              <span style={{ color: '#F9FAFB' }}>ABOUT</span>
+            </div>
+            
+            <div style={{ marginTop: '20px' }}>
+              <p className="text-white/50 text-sm">© 2024 ISO TECH. All rights reserved.</p>
+            </div>
           </div>
-        </div>
-
-        <div className="border-t border-white/10 mt-16 pt-8 text-center">
-          <p className="text-white/40 text-sm font-medium">© 2024 ISO TECH. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -24,10 +24,10 @@ export function Hero() {
   }
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center bg-white pt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <section id="home" className="relative min-h-screen flex items-center bg-black pt-20 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="mb-16">
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 tracking-tight">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-4 tracking-tight">
             <span className="block leading-[0.9]">We Build Digital</span>
             <span className="block relative h-[1em] overflow-hidden">
               {words.map((word, index) => (
@@ -48,18 +48,26 @@ export function Hero() {
             </span>
           </h1>
         </div>
-        <h2 className="text-xl md:text-2xl font-light text-foreground/80 mb-12 leading-relaxed max-w-3xl">
+        <h2 className="text-lg font-light text-white/80 mb-12 leading-relaxed max-w-3xl">
           We craft digital experiences that propel your business forward. Our expert team blends stunning design with technical excellence to create websites that don't just look great – they deliver real results.
         </h2>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button
             onClick={() => scrollToSection("portfolio")}
             size="lg"
-            className="bg-primary text-primary-foreground hover:bg-transparent hover:text-primary hover:border-primary border-2 border-primary px-8 py-3 text-base font-medium transition-all duration-300 rounded-full"
+            className="bg-white text-black border-2 border-white hover:bg-black hover:text-white hover:border-white px-8 py-3 text-base font-medium transition-all duration-300 rounded-full"
           >
             View Selected Work
           </Button>
         </div>
+      </div>
+      <div className="absolute right-0 top-0 h-full w-1/2 lg:w-2/5">
+        <img
+          src="https://i.imgur.com/hlmIpt5.jpeg"
+          alt="Hero background"
+          className="h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent"></div>
       </div>
     </section>
   )
