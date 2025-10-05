@@ -43,9 +43,14 @@ export function Services() {
               </h2>
             </div>
             <div className="space-y-8">
-              <p className="text-lg text-white/90 leading-relaxed">
-                Look, we get it. You need a website that doesn't suck, but you're probably tired of agencies charging crazy prices upfront. So here's our deal: we'll build you a custom site for free. If you like it, it's $200/month. That's it.
-              </p>
+              <div>
+                <p className="text-5xl md:text-6xl font-bold text-white leading-tight">
+                  $200/month.
+                </p>
+                <p className="text-xl text-gray-400 mt-2">
+                  That's it.
+                </p>
+              </div>
               <div>
                 <h3 className="text-2xl font-light text-white mb-6">What you get:</h3>
                 <div className="space-y-4">
