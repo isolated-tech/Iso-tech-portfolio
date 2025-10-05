@@ -40,6 +40,12 @@ export function Navigation() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-12">
               <button
+                onClick={() => scrollToSection("our-model")}
+                className="text-white/80 hover:text-white px-0 py-2 text-sm font-medium transition-colors duration-300"
+              >
+                Our Model
+              </button>
+              <button
                 onClick={() => scrollToSection("services")}
                 className="text-white/80 hover:text-white px-0 py-2 text-sm font-medium transition-colors duration-300"
               >
@@ -52,16 +58,10 @@ export function Navigation() {
                 Work
               </button>
               <button
-                onClick={() => scrollToSection("blog")}
+                onClick={() => scrollToSection("team")}
                 className="text-white/80 hover:text-white px-0 py-2 text-sm font-medium transition-colors duration-300"
               >
-                Blog
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
-                className="text-white/80 hover:text-white px-0 py-2 text-sm font-medium transition-colors duration-300"
-              >
-                About
+                The Team
               </button>
               <Button
                 onClick={() => scrollToSection("contact")}
@@ -85,6 +85,12 @@ export function Navigation() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
               <button
+                onClick={() => scrollToSection("our-model")}
+                className="text-foreground block px-3 py-2 text-base font-medium w-full text-left"
+              >
+                Our Model
+              </button>
+              <button
                 onClick={() => scrollToSection("services")}
                 className="text-foreground block px-3 py-2 text-base font-medium w-full text-left"
               >
@@ -97,16 +103,10 @@ export function Navigation() {
                 Work
               </button>
               <button
-                onClick={() => scrollToSection("blog")}
+                onClick={() => scrollToSection("team")}
                 className="text-foreground block px-3 py-2 text-base font-medium w-full text-left"
               >
-                Blog
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
-                className="text-foreground block px-3 py-2 text-base font-medium w-full text-left"
-              >
-                About
+                The Team
               </button>
               <Button
                 onClick={() => scrollToSection("contact")}

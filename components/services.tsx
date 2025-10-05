@@ -34,7 +34,7 @@ const additionalServices = [
 export function Services() {
   return (
     <>
-      <section id="services" className="py-40" style={{ backgroundColor: '#131313' }}>
+      <section id="our-model" className="py-40" style={{ backgroundColor: '#131313' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             <div className="flex items-center justify-center lg:justify-start">
@@ -67,7 +67,7 @@ export function Services() {
         </div>
       </section>
 
-      <section className="py-40 bg-black">
+      <section id="services" className="py-40 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             <div className="flex items-center justify-center lg:justify-start">
