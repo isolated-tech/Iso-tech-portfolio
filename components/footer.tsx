@@ -42,9 +42,9 @@ export function Footer() {
             </a>
             
             <div style={{ marginTop: '100px', display: 'flex', gap: '30px', justifyContent: 'flex-end' }}>
-              <a href="#about" style={{ color: '#F9FAFB', textDecoration: 'none' }}>OUR MODEL</a>
+              <a href="#about" style={{ color: '#F9FAFB', textDecoration: 'none' }}>PRICING</a>
               <a href="#services" style={{ color: '#F9FAFB', textDecoration: 'none' }}>SERVICES</a>
-              <a href="#portfolio" style={{ color: '#F9FAFB', textDecoration: 'none' }}>WORK</a>
+              <a href="#portfolio" style={{ color: '#F9FAFB', textDecoration: 'none' }}>PORTFOLIO</a>
               <a href="#team" style={{ color: '#F9FAFB', textDecoration: 'none' }}>THE TEAM</a>
             </div>
             

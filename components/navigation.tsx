@@ -43,7 +43,7 @@ export function Navigation() {
                 onClick={() => scrollToSection("our-model")}
                 className="text-white/80 hover:text-white px-0 py-2 text-sm font-medium transition-colors duration-300"
               >
-                Our Model
+                Pricing
               </button>
               <button
                 onClick={() => scrollToSection("services")}
@@ -52,10 +52,10 @@ export function Navigation() {
                 Services
               </button>
               <button
-                onClick={() => scrollToSection("work")}
+                onClick={() => scrollToSection("portfolio")}
                 className="text-white/80 hover:text-white px-0 py-2 text-sm font-medium transition-colors duration-300"
               >
-                Work
+                Portfolio
               </button>
               <button
                 onClick={() => scrollToSection("team")}
@@ -88,7 +88,7 @@ export function Navigation() {
                 onClick={() => scrollToSection("our-model")}
                 className="text-foreground block px-3 py-2 text-base font-medium w-full text-left"
               >
-                Our Model
+                Pricing
               </button>
               <button
                 onClick={() => scrollToSection("services")}
@@ -97,10 +97,10 @@ export function Navigation() {
                 Services
               </button>
               <button
-                onClick={() => scrollToSection("work")}
+                onClick={() => scrollToSection("portfolio")}
                 className="text-foreground block px-3 py-2 text-base font-medium w-full text-left"
               >
-                Work
+                Portfolio
               </button>
               <button
                 onClick={() => scrollToSection("team")}

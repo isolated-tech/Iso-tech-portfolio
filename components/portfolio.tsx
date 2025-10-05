@@ -80,12 +80,12 @@ export function Portfolio() {
   const displayedProjects = showMore ? projects : projects.slice(0, 2)
 
   return (
-    <section id="work" className="py-40" style={{ backgroundColor: '#131313' }}>
+    <section id="portfolio" className="py-40" style={{ backgroundColor: '#131313' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           <div className="flex items-center justify-center lg:justify-start">
             <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
-              WORK
+              PORTFOLIO
             </h2>
           </div>
 

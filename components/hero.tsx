@@ -57,7 +57,7 @@ export function Hero() {
             size="lg"
             className="bg-white text-black border-2 border-white hover:bg-black hover:text-white hover:border-white px-8 py-3 text-base font-medium transition-all duration-300 rounded-full"
           >
-            View Selected Work
+            View Portfolio
           </Button>
         </div>
       </div>

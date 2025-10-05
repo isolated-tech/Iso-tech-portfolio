@@ -39,7 +39,7 @@ export function Services() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             <div className="flex items-center justify-center lg:justify-start">
               <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
-                OUR MODEL
+                PRICING
               </h2>
             </div>
             <div className="space-y-8">
